@@ -3,7 +3,6 @@ int main() {
 #include <string.h>
 
 //para mexer a torre 5 casas à direita 
-int main() {
   int torre = 0, Rainha = 0, Bispo;
 
    do 

@@ -1,27 +1,46 @@
-int main() {
 #include <stdio.h>
 #include <string.h>
-
-//para mexer a torre 5 casas à direita 
-  int torre = 0, Rainha = 0, Bispo;
-
-   do 
+   
+int main() {
+ 
+ int torre = 0, Rainha = 0, Bispo, Bispoc;
+ int cavalob, cavalo = 0;
+  
+  //movimento da torre usando loop do-while
+  do 
   {
     printf("Torre direita\n");
     torre++;
   }while(torre <= 4);
-
-  //para mexer o bispo 5 casas na diagonal
+  printf("\n");
+  //movimento do bispo usando loop aninhado
 
   for(Bispo = 1; Bispo <= 5; Bispo++)
   {
-    printf("Bispo cima e direita\n");
+    for(Bispoc = 1; Bispoc <=1; Bispoc++){
+    printf("Bispo cima\n");
+  } 
+    printf("Bispo Direita\n");
   }
-  //para mexer a Rainha 8 casas à esquerda
+  printf("\n");
+  //movimento da Rainha usando loop while
   while (Rainha <= 8)
   {
    printf("Rainha esquerda\n");
     Rainha++;
     }
-return 0;
-}
+  printf("\n");
+   //movimento do cavalo usando loop aninhado
+  
+   for(cavalob = 1; cavalob <= 1; cavalob++) {
+        while(cavalo <= 1) {
+            printf("cavalo baixo\n");
+            cavalo++;
+        }
+        printf("cavalo esquerda\n");
+    } 
+  
+
+    return 0;
+
+   }
